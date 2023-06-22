@@ -1,9 +1,14 @@
 package main
 
 import (
-	"module/assistant"
+	"fmt"
+	pkg "module/pkg"
 )
 
 func main() {
-	assistant.SumNumbers(3.5, 8.37)
+	fmt.Println(pkg.UserData{Name: "Jorge", Age: 41,})
+	fmt.Println(pkg.SumNumbers(16, 45))
+    fmt.Println(pkg.MyList([]int{1, 2, 3, 4, 5}))
+	fmt.Println(pkg.SumAll(1,2,3,4,8,5,6))
+	fmt.Printf("The day is %s\n", pkg.DayWeek(10))
 }
